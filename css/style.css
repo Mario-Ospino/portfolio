@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
     
 }
 
@@ -13,13 +14,44 @@ h1,h2,h3,h4,h5,h6{
     /*font-style: italic;*/
 }
 
+figure{
+    margin: 0;
+}
+
 header {
 background-color: #1b2127   ;
 color: white;
+display: flex;
+justify-content: space-between;
+height: 70px;
+align-items: center;
+}
+.menu{
+    height: inherit;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
 }
 .header a {
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .hero{
@@ -29,6 +61,8 @@ color: white;
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 h1 {
     font-size: 40px;
@@ -37,18 +71,61 @@ h1 {
     color: white;
     /*text-transform: uppercase;
     text-decoration: underline;*/
+    margin : 0;
+ 
 }
 h1 strong {
     color: #026fff;
 }
-
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
 .project{
 
-    border-top: 1px solid gray;
-    border-radius: 10px;;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background:white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong{
+    font-family: 'VT323', monospace;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px ;
+}
+
+.project-course{
+    margin: 10px 0;
+}
+.project-date{
+    margin:10px 0;
+}
+.project-url{
+    margin: 20px 0px;
+}
+
+.project-description{
+    font-size: 20px;
 }
 .project-details {
     width: 500px;
+
 }
 
 .project-image {
@@ -56,4 +133,122 @@ h1 strong {
 }
 
 
+footer{
+    color: white;
+    background: #1b2127;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
+}
 
+.event-list{
+
+    display: flex;
+}
+.event-list-title{
+    margin-left: 20px;
+}
+
+.event{
+  
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color:#056fff;
+    border-radius: 5px;
+    
+}
+
+
+.contact{
+    background:#056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-email input {
+    border-color: gray;
+    padding: 10px  20px 10px 25px;
+    background: url('../images/icon16.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: honeydew;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.social{
+  
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px; 
+    margin: 0px 10px;
+    
+}
+.social-link.twitter{
+    background: url('../images/twitter.svg');
+    background-size: 50px 50px;
+}   
+.social-link.facebook {
+    background: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+.social-link.github {
+    background: url('../images/imagen-de-github.svg');
+    background-size: 50px 50px;
+}
+   
+.social-link.instagram{
+    background: url('../images/instagram-bosquejado.svg');
+    background-size: 50px 50px;
+}
